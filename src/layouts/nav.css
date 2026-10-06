@@ -1,0 +1,45 @@
+
+
+.nav {
+    background-color: #26332C(2, 86, 2, 0.499);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    font-family: var(--main-font);
+}
+
+.nav .logo{
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e4e34;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #26332C;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav ul li{
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.nav ul li:hover {
+    background-color: #7cc4a3d8;
+}
+
+.logo {
+
+}
