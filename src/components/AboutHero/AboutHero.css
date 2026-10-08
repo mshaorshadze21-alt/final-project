@@ -1,6 +1,36 @@
 .about-hero{
     width: 100%;
     height: fit-content;
-    padding: 20px;
-    background-color: aquamarine;
+    padding: 20px 150px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.about-hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-hero-content span{
+    font-size: 16px;
+    font-family: var(--main-font);
+    color: var(--dark-color);
+    line-height: 0.5;
+    font-weight: 500;
+}
+
+.about-hero-content h1{
+    font-family: var(--main-font);
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+.about-hero-image {
+    width: 100%;
+    height: 300px;
 }

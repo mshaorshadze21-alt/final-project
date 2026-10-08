@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import "./nav.css"
+import { Link } from "react-router-dom";
+import "./nav.css";
 
 const Nav = () => {
   return (
@@ -12,7 +12,7 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/service">Services</Link>
+          <Link to="/services">Services</Link>
         </li>
         <li>
           <Link to="/caregivers">Caregivers</Link>
@@ -29,10 +29,17 @@ const Nav = () => {
       </ul>
 
       <div>
-        <Link to="/login">Login/</Link><Link to="/signup">Sign up</Link>
+        <ul>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup">Sign up</Link>
+          </li>
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

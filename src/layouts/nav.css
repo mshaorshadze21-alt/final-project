@@ -1,19 +1,19 @@
 
 
 .nav {
-    background-color: #26332C(2, 86, 2, 0.499);
-    padding: 20px;
+    width: 100%;
+    
+    padding: 20px 130px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 150px;
     font-family: var(--main-font);
 }
 
 .nav .logo{
     font-size: 28px;
     font-weight: 600;
-    color: #1e4e34;
+    color: var(--main-color);
 }
 
 .nav ul{
@@ -26,20 +26,18 @@
 
 .nav ul li a{
     text-decoration: none;
-    color: #26332C;
+    color: var(--dark-color);
     font-size: 18px;
     font-weight: 400;
 }
 
-.nav ul li{
+.nav ul li a{
     padding: 5px;
     border-radius: 15px;
 }
 
-.nav ul li:hover {
-    background-color: #7cc4a3d8;
+.nav ul li a:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
 }
 
-.logo {
-
-}

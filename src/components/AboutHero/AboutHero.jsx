@@ -3,8 +3,8 @@ import "./AboutHero.css"
 const AboutHero = () => {
   return (
     <section className="about-hero">
-      <div className="about-hero__content">
-        <span className="about-hero__label">
+      <div className="about-hero-content">
+        <span className="about-hero-label">
           ABOUT PETCARE
         </span>
 
@@ -19,7 +19,7 @@ const AboutHero = () => {
         <button>Explore Services</button>
       </div>
 
-      <div className="about-hero__image">
+      <div className="about-hero-image">
         <img
           
         />
