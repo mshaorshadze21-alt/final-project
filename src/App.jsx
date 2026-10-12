@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login"
 import SignUp from "./pages/SignUp/SignUp"
 import Nav from "./layouts/Nav"
 import NotFound from "./layouts/NotFound"
+import Chatbot from "./components/Chatbot/Chatbot"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="signup" element={<SignUp/>}/>
           <Route path="*" element={<NotFound/>}/>
       </Routes>
+      <Chatbot/>
     </>
   )
 }
