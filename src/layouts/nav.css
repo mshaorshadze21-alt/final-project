@@ -8,12 +8,23 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--main-font);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: var(--secondary-color);
 }
 
 .nav .logo{
     font-size: 28px;
     font-weight: 600;
     color: var(--main-color);
+}
+
+.nav .logo i{
+    color: var(--accent-color);
 }
 
 .nav ul{
@@ -24,20 +35,29 @@
 
 }
 
-.nav ul li a{
+.nav .nav-link{
     text-decoration: none;
     color: var(--dark-color);
     font-size: 18px;
     font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease;
 }
 
-.nav ul li a{
+.nav .nav-link.active{
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+}
+
+
+/* .nav ul li a{
     padding: 5px;
     border-radius: 15px;
-}
+} */
 
-.nav ul li a:hover {
-    background-color: var(--main-color);
+.nav .nav-link:hover {
+    background-color: var(--accent-color);
     color: var(--secondary-color);
 }
 

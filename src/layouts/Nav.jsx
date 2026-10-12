@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./nav.css";
 
 const Nav = () => {
@@ -9,19 +9,19 @@ const Nav = () => {
       </div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" className="nav-link">Home</NavLink>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <NavLink to="/services" className="nav-link">Services</NavLink>
         </li>
         <li>
-          <Link to="/caregivers">Caregivers</Link>
+          <NavLink to="/caregivers" className="nav-link">Caregivers</NavLink>
         </li>
         <li>
-          <Link to="/businesses">Businesses</Link>
+          <NavLink to="/businesses" className="nav-link">Businesses</NavLink>
         </li>
         <li>
-          <Link to="/about">About Us</Link>
+          <NavLink to="/about" className="nav-link">About</NavLink>
         </li>
         {/* <li>
           <Link to="/login">Login/</Link><Link to="/signup">Sign up</Link>
@@ -31,10 +31,10 @@ const Nav = () => {
       <div>
         <ul>
           <li>
-            <Link to="/login">Login</Link>
+            <NavLink to="/login">Login</NavLink>
           </li>
           <li>
-            <Link to="/signup">Sign up</Link>
+            <NavLink to="/signup">Sign up</NavLink>
           </li>
         </ul>
       </div>

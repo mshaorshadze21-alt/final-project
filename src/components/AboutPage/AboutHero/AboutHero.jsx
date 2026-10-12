@@ -1,4 +1,7 @@
 import "./AboutHero.css"
+import heroImage from "../../../assets/heroImageDark.png"
+import paw from "../../../assets/paw.svg"
+import Button from "../../buttons/Button"
 
 const AboutHero = () => {
   return (
@@ -16,14 +19,18 @@ const AboutHero = () => {
           simple and convenient platform.
         </p>
 
-        <button>Explore Services</button>
+        <Button text="Explore Services"/>
       </div>
 
       <div className="about-hero-image">
         <img
-          
+          src={heroImage} alt="Hero Image"
         />
       </div>
+      <span className="about-hero-paw">
+        <img src={paw} alt="paw"/>
+        <img src={paw} alt="paw"/>
+      </span>
     </section>
   )
 }
