@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   width: min(390px, calc(100vw - 32px));
-  height: min(570px, calc(100dvh - 130px));
+  height: min(570px, calc(100dvh - 190px));
   overflow: hidden;
   border: 1px solid #e9e8f4;
   border-radius: 22px;
@@ -107,6 +107,8 @@
 
 .chat-actions {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -119,6 +121,9 @@
   color: white;
   font-size: 23px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-actions button:disabled {
