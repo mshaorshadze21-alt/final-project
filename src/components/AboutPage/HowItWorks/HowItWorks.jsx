@@ -12,9 +12,9 @@ const HowItWorks = () => {
         </p>
       </div>
 
-      <div className="how-it-works__steps">
+      <div className="how-it-works-steps">
         <article className="step-card">
-          <span className="step-card__number">01</span>
+          <span className="step-card-number">01</span>
           <h3>Search</h3>
           <p>
             Find the service your pet needs.
@@ -22,7 +22,7 @@ const HowItWorks = () => {
         </article>
 
         <article className="step-card">
-          <span className="step-card__number">02</span>
+          <span className="step-card-number">02</span>
           <h3>Choose</h3>
           <p>
             Compare available options and their details.
@@ -30,7 +30,7 @@ const HowItWorks = () => {
         </article>
 
         <article className="step-card">
-          <span className="step-card__number">03</span>
+          <span className="step-card-number">03</span>
           <h3>Book</h3>
           <p>
             Choose a convenient service and time.

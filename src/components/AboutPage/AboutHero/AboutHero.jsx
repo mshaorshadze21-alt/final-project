@@ -1,6 +1,6 @@
 import "./AboutHero.css"
 import heroImage from "../../../assets/heroImageDark.png"
-import paw from "../../../assets/paw.svg"
+import Paw from "../../../assets/paw.svg?react";
 import Button from "../../buttons/Button"
 
 const AboutHero = () => {
@@ -19,7 +19,7 @@ const AboutHero = () => {
           simple and convenient platform.
         </p>
 
-        <Button text="Explore Services"/>
+        <Button children="Explore Services"/>
       </div>
 
       <div className="about-hero-image">
@@ -27,10 +27,8 @@ const AboutHero = () => {
           src={heroImage} alt="Hero Image"
         />
       </div>
-      <span className="about-hero-paw">
-        <img src={paw} alt="paw"/>
-        <img src={paw} alt="paw"/>
-      </span>
+        <Paw className="paw-icon"/>
+        <Paw className="paw-icon"/>
     </section>
   )
 }

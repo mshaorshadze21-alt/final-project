@@ -1,4 +1,3 @@
-
 .how-it-works {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,37 +10,38 @@
 }
 
 .section-label {
-  color: var(--primary);
-  font-size: 12px;
+  font-family: var(--second-font);
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .how-it-works-heading h2 {
-    color: var(--main-color);
-    font-family: var(--main-font);
-    font-size: 50px;
-  margin: 12px 0;
-  font-size: 32px;
+  color: var(--dark-color);
+  font-family: var(--main-font);
+  font-size: 50px;
 }
 
-.how-it-works__heading p {
-  color: var(--muted);
+.how-it-works-heading p {
+  font-family: var(--second-font);
   line-height: 1.7;
 }
 
-.how-it-works__steps {
+.how-it-works-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
 .step-card {
+  border: 2px solid var(--dark-color);
+  border-radius: 30px;
   padding: 28px 20px;
   text-align: center;
 }
 
-.step-card__number {
+.step-card-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -49,12 +49,14 @@
   height: 48px;
   margin-bottom: 16px;
   border-radius: 50%;
-  background: #e4eee5;
+  background: var(--accent-color);
   color: var(--primary);
   font-weight: 700;
 }
 
 .step-card h3 {
+  font-family: var(--main-font);
+  color: var(--dark-color);
   margin-bottom: 10px;
 }
 
@@ -64,7 +66,7 @@
 }
 
 @media (max-width: 650px) {
-  .how-it-works__steps {
+  .how-it-works-steps {
     grid-template-columns: 1fr;
     gap: 12px;
   }

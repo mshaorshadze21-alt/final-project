@@ -2,10 +2,12 @@
 
 :root{
     --main-font: "Poppins", sans-serif;
-    --secondary-font: "Roboto", sans-serif;
+    --second-font: "Roboto", sans-serif;
     --main-color: #075056;
-    --secondary-color: #E4EEF0;
-    --accent-color: #ED9D03;
+    /* --secondary-color: #E4EEF0; */
+    --secondary-color: #E5EEFF;
+    /* --accent-color: #ED9D03; */
+    --accent-color: #FDD202;
     --dark-color: #16232A;
 }
 
@@ -15,8 +17,5 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body {
-    /* padding: 0 150px; */
-    background-color: var(--secondary-color);
-}
+
 

@@ -1,0 +1,20 @@
+.home-page {
+    padding-top: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.circle {
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 650px;
+    left: 130px;
+    z-index: -1;
+}

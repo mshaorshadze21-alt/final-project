@@ -1,9 +1,12 @@
-import "./Button.css"
-
-const Button = ({text}) => {
+function Button({ children, variant = "primary", onClick }) {
   return (
-    <button>{text}</button>
-  )
+    <button
+      className={`btn btn-${variant}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 }
 
-export default Button
+export default Button;

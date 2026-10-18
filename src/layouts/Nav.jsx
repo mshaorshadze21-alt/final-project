@@ -1,9 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./nav.css";
 
 const Nav = () => {
+
+  const location = useLocation();
+  
   return (
-    <div className="nav">
+    <div className={`nav ${
+        location.pathname === "/" ? "home-nav" : ""
+      }`}>
       <div className="logo">
         PetCare <i class="fa-solid fa-paw"></i>
       </div>

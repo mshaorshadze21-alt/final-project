@@ -7,6 +7,7 @@ import Businesses from "./pages/Businesses/Businesses"
 import Login from "./pages/Login/Login"
 import SignUp from "./pages/SignUp/SignUp"
 import Nav from "./layouts/Nav"
+import Footer from "./layouts/Footer"
 import NotFound from "./layouts/NotFound"
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="signup" element={<SignUp/>}/>
           <Route path="*" element={<NotFound/>}/>
       </Routes>
+      <Footer/>
     </>
   )
 }

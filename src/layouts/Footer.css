@@ -1,0 +1,17 @@
+
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(229, 238, 255, 0.5);
+    color: var(--dark-color);
+    font-family: var(--main-font);
+    
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
