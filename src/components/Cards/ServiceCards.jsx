@@ -28,14 +28,14 @@ const ServiceCard = () => {
   return (
     <div className="service-grid">
         {services.map((service) => (
-              <article className="service-card" key={service.title}>
-                <div className="service-icon">{service.icon}</div>
+              <article className="service-caard" key={service.title}>
+                <div className="service-icoon">{service.icon}</div>
 
                 <h3>{service.title}</h3>
 
                 <p>{service.description}</p>
 
-                <a href="/services" className="service-link">
+                <a href="/services" className="service-liink">
                   Discover more <span aria-hidden="true"></span>
                 </a>
               </article>

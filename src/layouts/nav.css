@@ -21,6 +21,14 @@
     background-color: var(--secondary-color);
 }
 
+.services-nav {
+    background-color: var(--secondary-color);
+}
+
+.caregivers-nav {
+    background-color: var(--secondary-color);
+}
+
 .nav .logo{
     font-size: 28px;
     font-weight: bold;
