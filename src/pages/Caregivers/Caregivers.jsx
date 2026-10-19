@@ -347,7 +347,7 @@ export default function Caregivers() {
                       className="caregiver-book-btn"
                       onClick={() => openBooking(person)}
                     >
-                      Book now →
+                      Book now
                     </button>
                   </div>
                 </div>
