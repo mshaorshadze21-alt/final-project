@@ -254,16 +254,24 @@
   margin-bottom: 23px;
 }
 
-.service-icon {
+.service-image {
   display: flex;
-  width: 62px;
-  height: 62px;
+  width: 100%;
+  height: 300px;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  background: var(--services-yellow);
-  font-size: 29px;
+  background: #fff;
+  position: relative;
+}
+
+.service-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
 }
 
 .service-category {
@@ -273,6 +281,9 @@
   color: #45545b;
   font-size: 11px;
   font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .service-card h3 {
