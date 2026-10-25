@@ -19,12 +19,12 @@ function App() {
       <Nav/>
       <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="services" element={<Services/>}/>
-          <Route path="caregivers" element={<Caregivers/>}/>
-          <Route path="businesses" element={<Businesses/>}/>
-          <Route path="about" element={<About/>}/>
-          <Route path="login" element={<Login/>}/>
-          <Route path="signup" element={<SignUp/>}/>
+          <Route path="/services" element={<Services/>}/>
+          <Route path="/caregivers" element={<Caregivers/>}/>
+          <Route path="/businesses" element={<Businesses/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
           <Route path="*" element={<NotFound/>}/>
       </Routes>
       <Footer/>

@@ -76,13 +76,13 @@
     color: var(--accent-color);
     position: absolute;
     top: 200px;
-    right: 440px;
+    right: 480px;
 }
 
 svg.paw-icon:nth-of-type(2){
-    width: 60px;
-    height: 60px;
-    right: 530px;
+    width: 70px;
+    height: 70px;
+    right: 560px;
     top: 280px;
 }
 

@@ -2,13 +2,20 @@
 import { useMemo, useState } from "react";
 import "./caregivers.css";
 
+import emma from "../../assets/petcare-caregivers-mixed/emma-wilson.png"
+import olivia from "../../assets/petcare-caregivers-mixed/olivia-brown.png"
+import liam from "../../assets/petcare-caregivers-mixed/liam-anderson.png"
+import ava from "../../assets/petcare-caregivers-mixed/ava-thompson.png"
+import noah from "../../assets/petcare-caregivers-mixed/noah-davis.png"
+import sophia from "../../assets/petcare-caregivers-mixed/sophia-martinez.png"
+
 const caregiversData = [
   {
     id: 1,
     name: "Emma Wilson",
     role: "Dog Walker",
     category: "Walking",
-    icon: "🐕",
+    image: emma,
     rating: 4.9,
     price: 20,
     location: "City Center",
@@ -20,7 +27,7 @@ const caregiversData = [
     name: "Olivia Brown",
     role: "Pet Sitter",
     category: "Sitting",
-    icon: "🏡",
+    image: olivia,
     rating: 5.0,
     price: 30,
     location: "Old Town",
@@ -32,7 +39,7 @@ const caregiversData = [
     name: "Noah Davis",
     role: "Dog Walker",
     category: "Walking",
-    icon: "🦮",
+    image: noah,
     rating: 4.8,
     price: 18,
     location: "Seaside",
@@ -44,7 +51,7 @@ const caregiversData = [
     name: "Sophia Martinez",
     role: "Pet Sitter",
     category: "Sitting",
-    icon: "🐈",
+    image: sophia,
     rating: 4.9,
     price: 25,
     location: "City Center",
@@ -56,7 +63,7 @@ const caregiversData = [
     name: "Liam Anderson",
     role: "Pet Trainer",
     category: "Training",
-    icon: "🎾",
+    image: liam,
     rating: 4.8,
     price: 40,
     location: "Green District",
@@ -68,7 +75,7 @@ const caregiversData = [
     name: "Ava Thompson",
     role: "Pet Sitter",
     category: "Sitting",
-    icon: "🐾",
+    image: ava,
     rating: 5.0,
     price: 28,
     location: "Seaside",
@@ -292,10 +299,12 @@ export default function Caregivers() {
             {caregivers.map((person) => (
               <article className="caregiver-card" key={person.id}>
                 <div className="caregiver-card-cover">
-                  <div className="caregiver-avatar">{person.icon}</div>
-                  <span className="caregiver-verified">
-                    ✓ Caregiver
-                  </span>
+                  <div className="caregiver-avatar">
+                    <img src={person.image} alt="caregiver-image" />
+                  </div>
+                  {/* <span className="caregiver-verified">
+                    Caregiver
+                  </span> */}
                 </div>
 
                 <div className="caregiver-card-content">
@@ -459,7 +468,8 @@ export default function Caregivers() {
 
                 <div className="caregiver-selected-profile">
                   <div className="caregiver-avatar">
-                    {selected.icon}
+                    <img src={selected.image} alt="" />
+                    
                   </div>
 
                   <div>

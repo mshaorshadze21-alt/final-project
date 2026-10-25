@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: 40px 130px;
+    background-color: #FAF7F2;
 }
 
 .service-section-heading {
@@ -20,7 +21,7 @@
 .service-section-heading span {
     font-family: var(--second-font);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
 }

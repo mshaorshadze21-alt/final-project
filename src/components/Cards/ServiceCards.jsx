@@ -1,25 +1,30 @@
 import "./ServiceCards.css"
 
+import walking from "../../assets/petcare-red-illustrations/dog-walking.png"
+import sitting from "../../assets/petcare-red-illustrations/pet-sitting.png"
+import grooming from "../../assets/petcare-red-illustrations/pet-grooming.png"
+import vet from "../../assets/petcare-red-illustrations/veterinary-care.png"
+
 const ServiceCard = () => {
 
     const services = [
   {
-    icon: <i class="fa-solid fa-paw"></i>,
+    image: walking,
     title: "Dog Walking",
     description: "Daily walks and happy adventures.",
   },
   {
-    icon: <i class="fa-solid fa-house"></i>,
+    image: sitting,
     title: "Pet Sitting",
     description: "Care and attention while you're away.",
   },
   {
-    icon: <i class="fa-solid fa-scissors"></i>,
+    image: grooming,
     title: "Grooming",
     description: "Keep your pet clean and comfortable.",
   },
   {
-    icon: <i class="fa-solid fa-stethoscope"></i>,
+    image: vet,
     title: "Veterinary Care",
     description: "Find care for your pet's health.",
   },
@@ -29,7 +34,9 @@ const ServiceCard = () => {
     <div className="service-grid">
         {services.map((service) => (
               <article className="service-caard" key={service.title}>
-                <div className="service-icoon">{service.icon}</div>
+                <div className="home-service-image">
+                  <img src={service.image} alt="service-image" />
+                </div>
 
                 <h3>{service.title}</h3>
 

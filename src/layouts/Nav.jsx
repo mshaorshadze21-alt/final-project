@@ -52,10 +52,10 @@ const Nav = () => {
       <div>
         <ul>
           <li>
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/login" className="login">Login</NavLink>
           </li>
           <li>
-            <NavLink to="/signup">Sign up</NavLink>
+            <NavLink to="/signup" className="signup">Sign up</NavLink>
           </li>
         </ul>
       </div>

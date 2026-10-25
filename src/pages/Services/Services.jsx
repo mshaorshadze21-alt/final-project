@@ -1,24 +1,34 @@
 
 import { useMemo, useState } from "react";
 import "./services.css";
-import walking from "../../assets/walking.jpg"
-import training from "../../assets/train.jpg"
-import sitting from "../../assets/sitting.jpg"
-import grooming from "../../assets/grooming.jpg"
+import walking from "../../assets/petcare-red-illustrations/dog-walking.png"
+import training from "../../assets/petcare-red-illustrations/dog-training.png"
+import sitting from "../../assets/petcare-red-illustrations/pet-sitting.png"
+import grooming from "../../assets/petcare-red-illustrations/pet-grooming.png"
+import vet from "../../assets/petcare-red-illustrations/veterinary-care.png"
+import boarding from "../../assets/petcare-red-illustrations/pet-boarding.png"
+import daycare from  "../../assets/petcare-red-illustrations/pet-daycare.png"
+import dentalcare from "../../assets/petcare-red-illustrations/pet-dental-care.png"
+import taxi from "../../assets/petcare-red-illustrations/pet-taxi.png"
+import nutrition from "../../assets/petcare-red-illustrations/pet-nutrition.png"
+import puppycare from "../../assets/petcare-red-illustrations/puppy-care.png"
+import photo from "../../assets/petcare-red-illustrations/pet-photography.png"
+
+
 
 const servicesData = [
   { id: 1, name: "Dog Walking", category: "Walking", image: walking, description: "Daily walks, fresh air and happy adventures for your dog.", price: 20, unit: "walk" },
   { id: 2, name: "Pet Sitting", category: "Home Care", image: sitting, description: "Loving care and attention while you are away.", price: 35, unit: "visit" },
   { id: 3, name: "Pet Grooming", category: "Grooming", image: grooming, description: "Bathing, brushing and grooming for your pet.", price: 45, unit: "session" },
-  { id: 4, name: "Veterinary Care", category: "Health", icon: <i class="fa-solid fa-stethoscope"></i>, description: "Routine checkups and professional health consultations.", price: 60, unit: "appointment" },
-  { id: 5, name: "Pet Boarding", category: "Home Care", icon: <i class="fa-regular fa-moon"></i>, description: "A safe and comfortable place for overnight stays.", price: 50, unit: "night" },
+  { id: 4, name: "Veterinary Care", category: "Health", image: vet, description: "Routine checkups and professional health consultations.", price: 60, unit: "appointment" },
+  { id: 5, name: "Pet Boarding", category: "Home Care", image: boarding, description: "A safe and comfortable place for overnight stays.", price: 50, unit: "night" },
   { id: 6, name: "Dog Training", category: "Training", image: training, description: "Training sessions to build good habits and confidence.", price: 40, unit: "session" },
-  { id: 7, name: "Pet Daycare", category: "Home Care", icon: <i class="fa-solid fa-paw"></i>, description: "Supervised play and companionship throughout the day.", price: 30, unit: "day" },
-  { id: 8, name: "Pet Dental Care", category: "Health", icon: <i class="fa-solid fa-tooth"></i>, description: "Dental hygiene services for your pet's oral health.", price: 35, unit: "session" },
-  { id: 9, name: "Pet Taxi", category: "Transport", icon: <i class="fa-solid fa-taxi"></i>, description: "Convenient transport to appointments and other destinations.", price: 25, unit: "trip" },
-  { id: 10, name: "Pet Nutrition", category: "Health", icon: <i class="fa-solid fa-carrot"></i>, description: "Nutrition guidance to help your pet stay healthy.", price: 30, unit: "consultation" },
-  { id: 11, name: "Puppy Care", category: "Home Care", icon: <i class="fa-solid fa-paw"></i>, description: "Gentle care and attention for your growing puppy.", price: 30, unit: "visit" },
-  { id: 12, name: "Pet Photography", category: "Other", icon: <i class="fa-solid fa-camera"></i>, description: "Capture special moments with your furry friend.", price: 55, unit: "session" },
+  { id: 7, name: "Pet Daycare", category: "Home Care", image: daycare, description: "Supervised play and companionship throughout the day.", price: 30, unit: "day" },
+  { id: 8, name: "Pet Dental Care", category: "Health", image: dentalcare, description: "Dental hygiene services for your pet's oral health.", price: 35, unit: "session" },
+  { id: 9, name: "Pet Taxi", category: "Transport", image: taxi, description: "Convenient transport to appointments and other destinations.", price: 25, unit: "trip" },
+  { id: 10, name: "Pet Nutrition", category: "Health", image: nutrition, description: "Nutrition guidance to help your pet stay healthy.", price: 30, unit: "consultation" },
+  { id: 11, name: "Puppy Care", category: "Home Care", image: puppycare, description: "Gentle care and attention for your growing puppy.", price: 30, unit: "visit" },
+  { id: 12, name: "Pet Photography", category: "Other", image: photo, description: "Capture special moments with your furry friend.", price: 55, unit: "session" },
 ];
 
 const categories = [

@@ -1,4 +1,4 @@
-function Button({ children, variant = "primary", onClick }) {
+function Button({ variant = "primary", children, onClick }) {
   return (
     <button
       className={`btn btn-${variant}`}

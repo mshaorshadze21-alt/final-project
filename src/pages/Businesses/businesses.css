@@ -1,0 +1,288 @@
+.businesses-page {
+  --business-red: #d32f2f;
+  --business-dark: #202925;
+  --business-cream: #f1e6d7;
+
+  background: #fff;
+  color: var(--business-dark);
+}
+
+.businesses-page * {
+    padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.businesses-container {
+  width: min(85%, 1400px);
+  margin: 0 130px;
+}
+
+.businesses-label {
+  display: inline-block;
+  color: #b5221d;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.businesses-hero {
+  padding: 90px 0 110px;
+  overflow: hidden;
+}
+
+.businesses-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.businesses-hero-content h1 {
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1.13;
+  letter-spacing: 0px;
+  margin: 25px 0 30px;
+  font-weight: 700;
+}
+
+.businesses-hero-content p {
+  max-width: 570px;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.businesses-hero-visual {
+  position: relative;
+  height: 510px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.businesses-hero-circle {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  background: var(--main-color);
+  border-radius: 50%;
+  top: 40px;
+  right: 30px;
+}
+
+.businesses-hero-dog {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+
+
+.businesses-partners {
+  padding: 0px 0 130px;
+  background: #faf8f5;
+}
+
+.businesses-section-heading {
+  margin-bottom: 90px;
+  max-width: 700px;
+}
+
+.businesses-section-heading h2 {
+  font-size: clamp(38px, 4vw, 62px);
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.businesses-section-heading p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+
+.businesses-partners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+.businesses-partner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.businesses-partner-reverse
+.businesses-partner-image {
+  order: 2;
+}
+
+.businesses-partner-reverse
+.businesses-partner-content {
+  order: 1;
+}
+
+.businesses-partner-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 22px;
+  aspect-ratio: 3 / 2;
+}
+
+.businesses-partner-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.businesses-partner-image:hover img {
+  transform: scale(1.04);
+}
+
+.businesses-partner-content {
+  max-width: 500px;
+}
+
+.businesses-partner-content h3 {
+  font-size: clamp(32px, 3vw, 48px);
+  margin: 20px 0 25px;
+  line-height: 1.2;
+}
+
+.businesses-partner-content p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #414947;
+}
+
+
+
+.businesses-join {
+  padding: 110px 0;
+  background: var(--business-cream);
+}
+
+.businesses-join-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.businesses-join h2 {
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.businesses-join p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+
+
+@media (max-width: 1024px) {
+  .businesses-container {
+    width: 90%;
+  }
+
+  .businesses-hero-layout,
+  .businesses-partner,
+  .businesses-join-layout {
+    gap: 45px;
+  }
+
+  .businesses-hero-visual {
+    height: 400px;
+  }
+
+  .businesses-hero-circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .businesses-partners-list {
+    gap: 90px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .businesses-hero {
+    padding: 60px 0;
+  }
+
+  .businesses-hero-layout,
+  .businesses-partner,
+  .businesses-join-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .businesses-hero-content h1 {
+    letter-spacing: -1px;
+  }
+
+  .businesses-hero-content p,
+  .businesses-section-heading p,
+  .businesses-partner-content p,
+  .businesses-join p {
+    font-size: 17px;
+  }
+
+  .businesses-hero-visual {
+    height: 350px;
+  }
+
+  .businesses-hero-circle {
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .businesses-hero-dog {
+    max-width: 350px;
+  }
+
+  .businesses-partners {
+    padding: 70px 0;
+  }
+
+  .businesses-section-heading {
+    margin-bottom: 55px;
+  }
+
+  .businesses-partners-list {
+    gap: 75px;
+  }
+
+  .businesses-partner {
+    gap: 25px;
+  }
+
+  .businesses-partner-reverse
+  .businesses-partner-image,
+  .businesses-partner-reverse
+  .businesses-partner-content {
+    order: initial;
+  }
+
+  .businesses-partner-content h3 {
+    margin: 12px 0 15px;
+  }
+
+  .businesses-join {
+    padding: 70px 0;
+  }
+}

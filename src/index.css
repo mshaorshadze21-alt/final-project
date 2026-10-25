@@ -3,12 +3,16 @@
 :root{
     --main-font: "Poppins", sans-serif;
     --second-font: "Roboto", sans-serif;
-    --main-color: #075056;
+    /* --main-color: #075056; */
+    --main-color: #a02925;
     /* --secondary-color: #E4EEF0; */
-    --secondary-color: #E5EEFF;
+    /* --secondary-color: #E5EEFF; */
+    --secondary-color: #F0E5D7;
     /* --accent-color: #ED9D03; */
-    --accent-color: #FDD202;
-    --dark-color: #16232A;
+    /* --accent-color: #FDD202; */
+    --accent-color: #CF3430;
+    /* --dark-color: #16232A; */
+    --dark-color: #202724;
 }
 
 *{
