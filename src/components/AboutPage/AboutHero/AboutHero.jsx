@@ -33,6 +33,9 @@ const AboutHero = () => {
       </div>
         <Paw className="paw-icon"/>
         <Paw className="paw-icon"/>
+        {/* <div className="about-hero-circle">
+
+        </div> */}
     </section>
   )
 }

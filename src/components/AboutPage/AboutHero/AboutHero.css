@@ -89,3 +89,13 @@ svg.paw-icon:nth-of-type(2){
 .paw-icon path {
     fill: currentColor;
 }
+
+.about-hero-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-color: blue;
+    z-index: -1;
+    position: absolute;
+    right: 150px;
+}
