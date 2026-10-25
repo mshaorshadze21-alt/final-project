@@ -1,8 +1,9 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "./nav.css";
 
 const Nav = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <div
@@ -15,7 +16,7 @@ const Nav = () => {
             ? "caregivers-nav"
             : ""
       }`}>
-      <div className="logo">
+      <div className="logo" onClick={() => navigate ("/")}>
         PetCare <i class="fa-solid fa-paw"></i>
       </div>
       <ul>
