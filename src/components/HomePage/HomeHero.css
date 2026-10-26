@@ -63,3 +63,129 @@
     background-color: var(--accent-color);
     position: absolute;
 }
+
+
+@media (max-width: 1200px) {
+    .home-hero {
+        padding: 40px 60px;
+        height: 420px;
+    }
+
+    .home-hero-content {
+        width: 55%;
+        gap: 30px;
+    }
+
+    .home-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .home-hero-image {
+        width: 50%;
+        height: 100%;
+        right: 30px;
+    }
+
+    .home-hero-cat {
+        width: 240px;
+        height: 240px;
+        right: 70px;
+    }
+
+    .background {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        height: auto;
+        min-height: 650px;
+        padding: 50px 25px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .home-hero-content {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .home-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .home-hero-image {
+        width: 85%;
+        height: 350px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .home-hero-cat {
+        width: 200px;
+        height: 200px;
+        right: 10%;
+        bottom: -5px;
+    }
+
+    .background {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .home-hero {
+        width: 100%;
+        min-height: 580px;
+        padding: 40px 20px 0;
+    }
+
+    .home-hero-content {
+        gap: 20px;
+    }
+
+    .home-hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    .home-hero-image {
+        width: 100%;
+        height: 280px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .home-hero-cat {
+        width: 150px;
+        height: 150px;
+        right: 5%;
+        bottom: -5px;
+    }
+
+    .background {
+        width: 110px;
+        height: 110px;
+    }
+}

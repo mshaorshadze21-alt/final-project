@@ -689,3 +689,92 @@
     animation: none;
   }
 }
+
+
+@media (max-width: 1200px) {
+    .services-hero {
+        height: auto;
+        min-height: 400px;
+        padding: 60px 60px;
+    }
+
+    .services-hero h1 {
+        font-size: 50px;
+    }
+
+    .services-hero > p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .services-hero {
+        height: auto;
+        min-height: 350px;
+        padding: 50px 25px;
+    }
+
+    .services-hero h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .services-hero > p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 20px auto 25px;
+    }
+
+    .services-search {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 15px;
+    }
+
+    .services-search input {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .services-hero {
+        height: auto;
+        min-height: 0;
+        padding: 40px 20px;
+    }
+
+    .services-eyebrow {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    .services-hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    .services-hero > p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 15px auto 25px;
+    }
+
+    .services-search {
+        min-height: 48px;
+        padding: 0 12px;
+        gap: 8px;
+    }
+
+    .services-search input {
+        font-size: 13px;
+    }
+
+    .search-icon {
+        font-size: 18px;
+    }
+}
+

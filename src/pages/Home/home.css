@@ -1,5 +1,5 @@
 .home-page {
-    padding-top: 80px;
+    padding-top: 60px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     gap: 120px;
 }
 
-.circle {
+/* .circle {
     width: 450px;
     height: 450px;
     border-radius: 100%;
@@ -17,4 +17,22 @@
     top: 650px;
     left: 130px;
     z-index: -1;
+} */
+
+@media (max-width: 1200px) {
+    .home-page {
+        gap: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-page {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page {
+        gap: 40px;
+    }
 }

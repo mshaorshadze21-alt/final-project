@@ -9,7 +9,7 @@ import HomeServices from "../../components/HomePage/HomeServices"
 const Home = () => {
   return (
     <div className="home-page">
-      <div className="circle"></div>
+      {/* <div className="circle"></div> */}
       <HomeHero/>
       <HomeIntro/>
       <HomeServices/>

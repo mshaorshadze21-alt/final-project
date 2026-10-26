@@ -13,6 +13,7 @@ const HomeIntro = () => {
     <section className="home-intro">
         <div className="home-intro-image">
             <img src={image} alt="intro-image" />
+            <div className="home-intro-circle"></div>
         </div>
         <div className="home-intro-content">
             <h2>Happy pets, happy humans</h2>
