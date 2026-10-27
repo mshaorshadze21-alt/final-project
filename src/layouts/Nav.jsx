@@ -11,7 +11,7 @@ const Nav = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <div
+    <nav
       className={`nav ${
         location.pathname === "/"
           ? "home-nav"
@@ -120,7 +120,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 
