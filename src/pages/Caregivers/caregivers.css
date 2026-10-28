@@ -1,6 +1,6 @@
 
 .caregivers-page {
-  --cg-blue: #F0E5D7;
+  --cg-blue: #EEDBD7;
   --cg-yellow: #CF3430;
   --cg-dark: #16232a;
   --cg-teal: #a02925;
@@ -195,7 +195,7 @@
   padding: 21px;
   border: 1px solid #F0E5D7;
   border-radius: 17px;
-  background: #f3efeac1;
+  background: #f6f0ef;
 }
 
 .caregiver-filter-field {
@@ -249,7 +249,7 @@
 }
 
 .caregiver-reset-btn:hover {
-  background: #fff9d9;
+  background:#f4e9e7;
   border-color: var(--cg-yellow);
 }
 

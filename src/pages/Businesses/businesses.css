@@ -1,7 +1,7 @@
 .businesses-page {
   --business-red: #d32f2f;
   --business-dark: #202925;
-  --business-cream: #f1e6d7;
+  --business-cream: #EEDBD7;
 
   background: #fff;
   color: var(--business-dark);

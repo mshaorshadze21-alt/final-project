@@ -5,7 +5,7 @@
   --services-dark: #16232a;
   --services-teal: #075056;
   --services-white: #ffffff; */
-  --services-blue: #F0E5D7;
+  --services-blue: #EEDBD7;
   --services-yellow: #CF3430;
   --services-dark: #16232a;
   --services-teal: #a02925;
@@ -165,8 +165,8 @@
   gap: 18px;
   margin-bottom: 32px;
   padding: 22px;
-  background: #f3efeac1;
-  border: 1px solid #F0E5D7;
+  background: #f6f0ef;
+  border: 1px solid #f6f0ef;
   border-radius: 18px;
 }
 
@@ -222,7 +222,7 @@
 
 .reset-filters:hover {
   border-color: var(--services-yellow);
-  background: #fff9d9;
+  background: #f8ebe8;
 }
 
 .services-grid {
@@ -238,7 +238,7 @@
   padding: 27px;
   border: 1px solid transparent;
   border-radius: 20px;
-  background: #F6F3EF;
+  background: #f6f0ef;
   box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.1);
   transition:
     transform 0.25s ease,
@@ -248,7 +248,7 @@
 
 .service-card:hover {
   transform: translateY(-5px);
-  border-color: #F6E5CB;
+  border-color: #f6f0ef;
   /* box-shadow: 0 12px 28px rgb(22 35 42 / 8%); */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
