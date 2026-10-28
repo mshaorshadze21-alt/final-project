@@ -124,9 +124,17 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 448px) {
   .service-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .service-caard {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .service-caard > p {
