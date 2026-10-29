@@ -1,6 +1,6 @@
 import "./HomeHero.css";
-import heroImage from "../../assets/homehero-dog (3).png";
-import heroCat from "../../assets/homehero-cat.png";
+import heroImage from "../../assets/homehero-dog (3).webp";
+import heroCat from "../../assets/homehero-cat.webp";
 import Button from "../buttons/Button";
 import "../buttons/Button.css";
 import { useNavigate } from "react-router-dom";

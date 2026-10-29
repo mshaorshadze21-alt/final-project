@@ -1,5 +1,5 @@
 import "./HomeIntro.css"
-import image from "../../assets/homeIntro-image.png"
+import image from "../../assets/homeIntro-image.webp"
 import Button from "../buttons/Button"
 import "../buttons/Button.css"
 import { useNavigate } from "react-router-dom"

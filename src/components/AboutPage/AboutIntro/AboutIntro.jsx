@@ -1,7 +1,7 @@
 import "./AboutIntro.css";
 import Button from "../../buttons/Button";
 import "../../buttons/Button.css";
-import image from "../../../assets/homehero-dog (1).png";
+import image from "../../../assets/aboutintro-image.webp";
 import { useNavigate } from "react-router-dom";
 // import cat from "../../../assets/aboutintro-cat.png"
 

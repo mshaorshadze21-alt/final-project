@@ -1,5 +1,5 @@
 import "./AboutHero.css"
-import heroImage from "../../../assets/heroImageDark.png"
+import heroImage from "../../../assets/heroImageDark.webp"
 import Paw from "../../../assets/paw.svg?react";
 import Button from "../../buttons/Button"
 import { useNavigate } from "react-router-dom";
